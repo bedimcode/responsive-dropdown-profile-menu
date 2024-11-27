@@ -1,0 +1,15 @@
+========== HEADER & NAV ==========
+.nav__logo
+Logo
+
+.nav__link
+Home - About Us - Services - Products - Contact
+
+
+========== DROPDOWN ==========
+.dropdown__names
+Mark Sparks
+Developer
+
+.dropdown__link
+Profile - Activity - Saved - Settings - Logout
