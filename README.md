@@ -1,1 +1,13 @@
-# responsive-dropdown-profile-menu
+# Responsive Dropdown Profile Menu
+## [Watch it on youtube](https://youtu.be/U04TFalv4h0)
+### Responsive Dropdown Profile Menu
+
+- Responsive Dropdown Profile Menu Using HTML CSS And JavaScript
+- Contains a responsive navigation bar.
+- Contains a dropdown profile menu.
+- Developed first with the Mobile First methodology, then for desktop.
+- Compatible with all mobile devices and with a beautiful and pleasant user interface.
+
+💙 Join the channel to see more videos like this. [Bedimcode](https://www.youtube.com/@Bedimcode)
+
+![preview img](/preview.png)
