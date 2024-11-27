@@ -1,0 +1,94 @@
+/*=============== DROPDOWN ===============*/
+.dropdown{
+   position: relative;
+   
+   &__profile{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: .25rem;
+      cursor: pointer;
+   }
+   &__image{
+      position: relative;
+      width: 40px;
+      height: 40px;
+      background-color: var(--first-color);
+      border-radius: 50%;
+      overflow: hidden;
+      display: grid;
+      justify-items: center;
+
+      & img{
+         position: absolute;
+         width: 38px;
+         bottom: -1px;
+      }
+   }
+   &__names{
+      & h3{
+         font-size: var(--normal-font-size);
+         font-weight: var(--font-semi-bold);
+      }
+      & span{
+         display: block;
+         font-size: var(--small-font-size);
+         font-weight: var(--font-medium);
+         text-align: right;
+      }
+   }
+   &__list{
+      position: absolute;
+      top: 4.5rem;
+      background-color: var(--dark-color);
+      box-shadow: 0 8px 16px hsla(216, 24%, 8%, .2);
+      display: grid;
+      row-gap: .25rem;
+      padding: 1rem 1.25rem;
+      border-radius: .25rem;
+      z-index: var(--z-tooltip);
+      transform: translateY(-.75rem);
+      opacity: 0;
+      transition: transform .4s, opacity .4s;
+      pointer-events: none;
+   }
+   &__link{
+      color: var(--white-color);
+      display: flex;
+      align-items: center;
+      column-gap: 1rem;
+      padding: .25rem 1.5rem .25rem .5rem;
+      border-radius: .25rem;
+      transition: background-color .4s;
+
+      & i{
+         font-size: 1rem;
+      }
+      & span{
+         font-size: var(--small-font-size);
+         font-weight: var(--font-medium);
+      }
+      &:hover{
+         background-color: var(--dark-color-light);
+      }
+   }
+   &__list::after{
+      content: '';
+      width: 16px;
+      height: 16px;
+      background-color: var(--dark-color);
+      position: absolute;
+      top: -8px;
+      left: 0;
+      right: 0;
+      margin-inline: auto;
+      rotate: -45deg;
+   }
+}
+
+/* Show dropdown */
+.show-dropdown .dropdown__list{
+   transform: translateY(0);
+   opacity: 1;
+   pointer-events: initial;
+}

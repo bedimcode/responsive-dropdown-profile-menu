@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Responsive dropdown profile menu- Bedimcode</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">Logo</a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li>
+                     <a href="#" class="nav__link">Home</a>
+                  </li>
+
+                  <li>
+                     <a href="#" class="nav__link">About Us</a>
+                  </li>
+
+                  <li>
+                     <a href="#" class="nav__link">Services</a>
+                  </li>
+
+                  <li>
+                     <a href="#" class="nav__link">Products</a>
+                  </li>
+
+                  <li>
+                     <a href="#" class="nav__link">Contact</a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-large-line"></i>
+               </div>
+            </div>
+
+            <div class="nav__actions">
+               <!-- Dropdown -->
+               <div class="dropdown" id="dropdown">
+                  <div class="dropdown__profile">
+                     <div class="dropdown__names">
+                        <h3>Mark Sparks</h3>
+                        <span>Developer</span>
+                     </div>
+      
+                     <div class="dropdown__image">
+                        <img src="assets/img/perfil.png" alt="image">
+                     </div>
+                  </div>
+   
+                  <div class="dropdown__list">
+                     <a href="#" class="dropdown__link">
+                        <i class="ri-user-line"></i>
+                        <span>Profile</span>
+                     </a>
+   
+                     <a href="#" class="dropdown__link">
+                        <i class="ri-time-line"></i>
+                        <span>Activity</span>
+                     </a>
+   
+                     <a href="#" class="dropdown__link">
+                        <i class="ri-bookmark-line"></i>
+                        <span>Saved</span>
+                     </a>
+   
+                     <a href="#" class="dropdown__link">
+                        <i class="ri-settings-3-line"></i>
+                        <span>Settings</span>
+                     </a>
+   
+                     <a href="#" class="dropdown__link">
+                        <i class="ri-logout-box-r-line"></i>
+                        <span>Logout</span>
+                     </a>
+                  </div>
+               </div>
+
+               <!-- Toggle button -->
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line"></i>
+               </div>
+            </div>
+         </nav>
+      </header>
+      
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
